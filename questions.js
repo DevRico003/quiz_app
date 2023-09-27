@@ -72,7 +72,7 @@
             {
                  number:7,
                  question: "Was ist die größte Wüste der Welt?",
-                 answer : "Sahara",
+                 answer : "Antarktis",
                  options : [
                                   "Sahara",
                                   "Gobi",
