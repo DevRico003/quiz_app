@@ -294,10 +294,10 @@ function optionSelected(answer) {
 
         answer.classList.add("incorrect"); // Markiert die Antwort als falsch
         answer.insertAdjacentHTML("beforeend", crossIcon);  // Fügt das Kreuz-Icon hinzu
-        quizBox.style.animation = "shake 0.25s 2";  // Fügt eine "shake"-Animation zum Quiz-Fenster hinzu
+        // quizBox.style.animation = "shake 0.25s 2";  // Fügt eine "shake"-Animation zum Quiz-Fenster hinzu
         body.classList.add("wrong");    // Fügt eine Klasse zum Hauptkörper hinzu (möglicherweise für Styling-Zwecke)
         timeLine.classList.add("wrong"); // Zeigt die Timeline als falsch an
-        window.navigator.vibrate([500]);  // Lässt das Telefon vibrieren, wenn unterstützt
+        // window.navigator.vibrate([500]);  // Lässt das Telefon vibrieren, wenn unterstützt
 
         // Schleife durch alle Optionen und markiere die korrekte Antwort, wenn die vom Benutzer ausgewählte Antwort falsch ist
         for (let x = 0; x < allOptions; x++) {
