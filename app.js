@@ -30,8 +30,6 @@ continueBtn.onclick = () => {
     queCount(1);
     startTimer(11); // Startet den Timer bei 10 Sekunden
     startTimeLine(0);
-    alert("Ready??");
-    alert("Goodluck!!!");
 }
 
 // Definition der globalen Variablen
