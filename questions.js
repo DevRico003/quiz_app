@@ -26,80 +26,80 @@
             },
            {
                  number:3,
-                 question: "What does URL stand for ?",
-                 answer : "Uniform Resource Locator",
+                 question: "Wie viele Farben hat eine Regenbogen?",
+                 answer : "7",
                  options : [ 
-                                  "Universal Resource Language",
-                                  "Uniform Resource Locator",
-                                  "Universal Resource Locator",
-                                  "University Resource Link "
+                                  "5",
+                                  "6",
+                                  "7",
+                                  "8"
                                   ]
             
             },
             {
                  number:4,
-                 question: "What does HTTP stand for ?",
-                 answer : "Hypertext Transfer Protocol",
+                 question: "Welches Element hat das chemische Symbol 'O'?",
+                 answer : "Sauerstoff",
                  options : [
-                                  "Hypertext Transmitter Protocol",
-                                  "Hypertest Transfer Protocol",
-                                  "Hypertech Transit Protocol",
-                                  "Hypertext Transfer Protocol"
+                                  "Osmium",
+                                  "Gold",
+                                  "Sauerstoff",
+                                  "Ozon"
                                   ]
             }, 
             {
                  number:5,
-                 question: "What does SEO stand for ?",
-                 answer : "Search Engine Optimization",
+                 question: "Welcher Planet ist als 'roter Planet' bekannt?",
+                 answer : "Mars",
                  options : [ 
-                                  "Search Engine Orientation",
-                                  "Script Engine Optimization",
-                                  "Script Entension Order",
-                                  "Search Engine Optimization"
+                                  "Mars",
+                                  "Jupiter",
+                                  "Venus",
+                                  "Saturn"
                                ]
             },
             {
                  number:6,
-                 question: "What does API stand for ?",
-                 answer : "Application Programming Interface",
+                 question: "In welchem Jahr begann der Zweite Weltkrieg?",
+                 answer : "1939",
                  options : [
-                                  "Application Programming Interface",
-                                  "Appliances Programming Interface",
-                                  "Application Programming Instruction",
-                                  "Appliances Programming Instruction"
+                                  "1914",
+                                  "1939",
+                                  "1941",
+                                  "1950"
                                ]
             },
             {
                  number:7,
-                 question: "What does CSS stand for ?",
-                 answer : "Cascading Style Sheet",
+                 question: "Was ist die größte Wüste der Welt?",
+                 answer : "Sahara",
                  options : [
-                                  "Colorful Style Sheet",
-                                  "Cascading Sheet Style",
-                                  "Cascading Style Sheet",
-                                  "Creative Style Sheet"
+                                  "Sahara",
+                                  "Gobi",
+                                  "Kalahari",
+                                  "Antarktis"
                                ]
             },
              {
                  number:8,
-                 question: "What does DOM stand for ?",
-                 answer : "Document Object Model",
+                 question: "Welcher Fluss ist der längste der Welt?",
+                 answer : "Amazonas",
                  options : [
-                                 "Document Object Model",
-                                 "Docstring Object Model",
-                                 "Doctype Object Model",
-                                 "Document Object Module"
+                                 "Amazonas",
+                                 "Nil",
+                                 "Jangtsekiang",
+                                 "Mississippi"
                                ]
             },
             {
                  number:9,
-                 question: "What does CMS stand for ?",
-                 answer : "Content Management System",
+                 question: "Welches dieser Instrumente hat Saiten?",
+                 answer : "Gitarre",
                  options : [
-                                 "Content Managent System",
-                                 "Content Manager System",
-                                 "Content Managing System",
-                                 "Content Management System"
+                                 "Flöte",
+                                 "Trompete",
+                                 "Klavier",
+                                 "Gitarre"
                                ]
             }
              ];    
