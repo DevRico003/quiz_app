@@ -88,7 +88,7 @@ replayBtn.onclick = () => {
     clearInterval(counterLine); // Fortschrittslinie zurücksetzen
     startTimer(timeValue);
     startTimeLine(widthValue);
-    timeOut.textContent = "Time left"; // setzt den Text für die verbleibende Zeit zurück
+    timeOut.textContent = "Zeit"; // setzt den Text für die verbleibende Zeit zurück
     nextBtn.classList.remove("show"); // Verbirgt den "Nächste"-Button
     timeLine.classList.remove("right"); // Entfernt den "right"-Stil von der Zeitleiste
     timeLine.classList.remove("wrong"); // Entfernt den "wrong"-Stil von der Zeitleiste
@@ -222,32 +222,32 @@ function showResultBox() {
 
     // Abhängig von der Punktzahl des Benutzers wird ein anderer Text angezeigt
     if (userScore == questions.length) {
-        let scoreTag = '<span>🥳👌Perfect!! you got<p>' +
+        let scoreTag = '<span>🥳👌Perfekt!!! Du hast<p>' +
             userScore +
-            '</p>out of<p>' +
+            '</p>von<p>' +
             questions.length +
-            '</p>questions</span>';
+            '</p>Fragen</span>';
         scoreText.innerHTML = scoreTag;
     } else if (userScore > 6) {
-        let scoreTag = '<span>💫Congrats! you got<p>' +
+        let scoreTag = '<span>💫Gratulation! Du hast<p>' +
             userScore +
-            '</p>out of<p>' +
+            '</p>von<p>' +
             questions.length +
-            '</p>questions</span>';
+            '</p>Fragen</span>';
         scoreText.innerHTML = scoreTag;
     } else if (userScore > 3) {
-        let scoreTag = '<span>👍Nice, you got<p>' +
+        let scoreTag = '<span>👍Nice, Du hast<p>' +
             userScore +
-            '</p>out of<p>' +
+            '</p>von<p>' +
             questions.length +
-            '</p>questions</span>';
+            '</p>Fragen</span>';
         scoreText.innerHTML = scoreTag;
     } else {
-        let scoreTag = '<span>😟Sadly, you only got<p>' +
+        let scoreTag = '<span>😟Schade, Du hast nur<p>' +
             userScore +
-            '</p>out of<p>' +
+            '</p>von<p>' +
             questions.length +
-            '</p>questions</span>';
+            '</p>Fragen</span>';
         scoreText.innerHTML = scoreTag;
     }
 }
@@ -261,9 +261,9 @@ function queCount(index) {
     let totalQuestionsCount = 
         '<span><p>' + 
         index + 
-        '</p>of<p>' + 
+        '</p>von<p>' + 
         questions.length + 
-        '</p>Questions</span>';
+        '</p>Fragen</span>';
 
     // Zeigt den oben erstellten Text im Quiz-Fenster an
     bottomQueCount.innerHTML = totalQuestionsCount;
@@ -281,10 +281,10 @@ function optionSelected(answer) {
     // Wenn die vom Benutzer ausgewählte Antwort korrekt ist
     if (userAns == correctAns) {
         userScore += 1;  // Erhöht den Punktestand des Benutzers
-        answer.classList.add("correct");  // Markiert die Antwort als richtig
+        answer.classList.add("richtig");  // Markiert die Antwort als richtig
         answer.insertAdjacentHTML("beforeend", tickIcon);  // Fügt das Kontrollkästchen-Icon hinzu
-        body.classList.add("right");  // Fügt eine Klasse zum Hauptkörper hinzu (möglicherweise für Styling-Zwecke)
-        timeLine.classList.add("right"); // Zeigt die Timeline als korrekt an
+        body.classList.add("richtig");  // Fügt eine Klasse zum Hauptkörper hinzu (möglicherweise für Styling-Zwecke)
+        timeLine.classList.add("richtig"); // Zeigt die Timeline als korrekt an
     } else {
         var myQuizBox = false;
         if (myQuizBox) clearTimeout(myquizBox); // Verzögerung löschen, wenn sie existiert
@@ -292,11 +292,11 @@ function optionSelected(answer) {
             quizBox.style.animation = '';
         }, 500);  // Setzt die Animation des Quiz-Fensters zurück
 
-        answer.classList.add("incorrect"); // Markiert die Antwort als falsch
+        answer.classList.add("inkorrekt"); // Markiert die Antwort als falsch
         answer.insertAdjacentHTML("beforeend", crossIcon);  // Fügt das Kreuz-Icon hinzu
         // quizBox.style.animation = "shake 0.25s 2";  // Fügt eine "shake"-Animation zum Quiz-Fenster hinzu
-        body.classList.add("wrong");    // Fügt eine Klasse zum Hauptkörper hinzu (möglicherweise für Styling-Zwecke)
-        timeLine.classList.add("wrong"); // Zeigt die Timeline als falsch an
+        body.classList.add("falsch");    // Fügt eine Klasse zum Hauptkörper hinzu (möglicherweise für Styling-Zwecke)
+        timeLine.classList.add("falsch"); // Zeigt die Timeline als falsch an
         // window.navigator.vibrate([500]);  // Lässt das Telefon vibrieren, wenn unterstützt
 
         // Schleife durch alle Optionen und markiere die korrekte Antwort, wenn die vom Benutzer ausgewählte Antwort falsch ist
